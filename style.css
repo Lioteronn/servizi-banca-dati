@@ -1,0 +1,65 @@
+@import "./fonts.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+input, select, textarea {
+    all: unset;
+    border: 2px solid rgb(227, 242, 255);
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    background: rgb(227, 242, 255);
+    border-radius: 10px;
+    padding: 0 10px 0 10px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border: 2px solid rgb(158, 207, 247);
+}
+
+input[type="text"]::placeholder {
+    color: rgba(100, 185, 255, 0.644);
+}
+
+textarea {
+    padding: 10px;
+}
+
+input, select {
+    height: 30px;
+    line-height: 30px;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+}
+
+label:nth-child(1) {
+    margin: 0;
+}
+
+button {
+    display: block;
+    margin: 20px auto 0 auto;
+    
+}
+
+.form-container {
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-content {
+    width: 100%;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Data introduction helper</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <form class="form-container" action="" method="post">
+            <div class="form-content">
+                <label for="Nome">Nome</label>
+                <input type="text" name="Nome" id="" placeholder="Enter text" />
+
+                <label for="Cognome">Cognome</label>
+                <input
+                    type="text"
+                    name="Cognome"
+                    id=""
+                    placeholder="Enter text"
+                />
+
+                <label for="Data di inizio">Data di inizio</label>
+                <input
+                    type="text"
+                    name="Data di inizio"
+                    id=""
+                    placeholder="Enter text"
+                />
+
+                <label for="Data di fine">Data di fine</label>
+                <input
+                    type="text"
+                    name="Data di fine"
+                    id=""
+                    placeholder="Enter text"
+                />
+
+                <label for="Categoria">Categoria</label>
+                <select name="Categoria" id="">
+                    <option value="" disabled selected>Select category</option>
+                    <option value="">
+                        Accompagnamento_all_inserimento_scolastico_dei_minori
+                    </option>
+                    <option value="">Affido_famigliare</option>
+                    <option value="">Altro</option>
+                    <option value="">
+                        Attivita_di_sensibilizzazione_del_territorio
+                    </option>
+                    <option value="">
+                        Educazione_Formazione_e_Riqualificazione_profesionale
+                    </option>
+                    <option value="">
+                        Informazioni_Oritamento_e_Accapagnamento_legale
+                    </option>
+                    <option value="">Mediazione_linguistico_culturale</option>
+                    <option value="">
+                        Oriatamento_e_accesso_ai_servizi_del_territorio
+                    </option>
+                    <option value="">
+                        Orientamento_e_accompagnamento_all_inserimento_sociale
+                    </option>
+                    <option value="">
+                        Orientamento_e_accompagnamento_all_inserimento_abitativo
+                    </option>
+                    <option value="">
+                        Orientamento_e_accompagnato_all_inserimento_lavorativo
+                    </option>
+                    <option value="">Progetto_personalizato</option>
+                    <option value="">Tutela_psico_socio_sanitaria</option>
+                </select>
+
+                <label for="Servizio">Servizio</label>
+                <select name="Servizio" id="">
+                    <option value="" disabled selected>Select category</option>
+                    <optgroup id="sub_uno" label="Accompagnamento_all_inserimento_scolastico_dei_minori" hidden>
+                        <option value="">Asilo nido</option>
+                    </optgroup>
+                </select>
+
+                <label for="Descrizione">Descrizione</label>
+                <textarea
+                    name="Descrizione"
+                    id=""
+                    cols="30"
+                    rows="5"
+                ></textarea>
+
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>
