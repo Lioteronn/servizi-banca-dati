@@ -9,21 +9,17 @@
 
 input, select, textarea {
     all: unset;
-    border: 2px solid rgb(227, 242, 255);
+    border: 2px solid rgb(169, 169, 169);
     display: block;
     margin-top: 10px;
     width: 100%;
-    background: rgb(227, 242, 255);
-    border-radius: 10px;
+    border-radius: 4px;
     padding: 0 10px 0 10px;
-}
-
-input:focus, select:focus, textarea:focus {
-    border: 2px solid rgb(158, 207, 247);
+    color: black;
 }
 
 input[type="text"]::placeholder {
-    color: rgba(100, 185, 255, 0.644);
+    color: rgb(205, 205, 205);
 }
 
 textarea {
@@ -38,6 +34,8 @@ input, select {
 label {
     display: block;
     margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 label:nth-child(1) {

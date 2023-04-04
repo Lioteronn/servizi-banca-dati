@@ -39,42 +39,42 @@
                 />
 
                 <label for="Categoria">Categoria</label>
-                <select name="Categoria" id="">
+                <select name="Categoria" id="main-select">
                     <option value="" disabled selected>Select category</option>
-                    <option value="">
+                    <option value="" class="main-categories" id="sub_uno">
                         Accompagnamento_all_inserimento_scolastico_dei_minori
                     </option>
-                    <option value="">Affido_famigliare</option>
-                    <option value="">Altro</option>
-                    <option value="">
+                    <option value="" class="main-categories" id="sub_dos">Affido_famigliare</option>
+                    <option value="" class="main-categories" id="sub_tres">Altro</option>
+                    <option value="" class="main-categories" id="sub_cuatro">
                         Attivita_di_sensibilizzazione_del_territorio
                     </option>
-                    <option value="">
+                    <option value="" class="main-categories" id="sub_cinco">
                         Educazione_Formazione_e_Riqualificazione_profesionale
                     </option>
-                    <option value="">
+                    <option value="" class="main-categories" id="sub_seis">
                         Informazioni_Oritamento_e_Accapagnamento_legale
                     </option>
-                    <option value="">Mediazione_linguistico_culturale</option>
-                    <option value="">
+                    <option value="" class="main-categories" id="sub_siete">Mediazione_linguistico_culturale</option>
+                    <option value="" class="main-categories" id="sub_ocho">
                         Oriatamento_e_accesso_ai_servizi_del_territorio
                     </option>
-                    <option value="">
+                    <option value="" class="main-categories" id="sub_nueve">
                         Orientamento_e_accompagnamento_all_inserimento_sociale
                     </option>
-                    <option value="">
+                    <option value="" class="main-categories" id="sub_diez">
                         Orientamento_e_accompagnamento_all_inserimento_abitativo
                     </option>
-                    <option value="">
+                    <option value="" class="main-categories" id="sub_once">
                         Orientamento_e_accompagnato_all_inserimento_lavorativo
                     </option>
-                    <option value="">Progetto_personalizato</option>
-                    <option value="">Tutela_psico_socio_sanitaria</option>
+                    <option value="" class="main-categories" id="sub_doce">Progetto_personalizato</option>
+                    <option value="" class="main-categories" id="sub_trece">Tutela_psico_socio_sanitaria</option>
                 </select>
 
                 <label for="Servizio">Servizio</label>
-                <select name="Servizio" id="">
-                    <option value="" disabled selected>Select category</option>
+                <select name="Servizio" id="sub-select">
+                    <option id="default-option" value="" disabled selected>Select category</option>
                     <optgroup
                         id="sub_uno"
                         label="Accompagnamento_all_inserimento_scolastico_dei_minori"
@@ -545,6 +545,8 @@
                 ></textarea>
 
                 <button type="submit">Submit</button>
+
+                <script src="./Scripts/Categories.js"></script>
             </div>
         </form>
     </body>
