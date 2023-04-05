@@ -43,8 +43,6 @@ function createRow() {
     buttonImage.src = "./Images/delete.svg";
     deleteButton.appendChild(buttonImage);
 
-    console.log(data);
-
     let row = document.createElement("tr");
     
     for (let i = 0; i < data.length; i++) {

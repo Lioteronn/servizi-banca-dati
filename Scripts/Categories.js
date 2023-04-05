@@ -1,7 +1,6 @@
 const subCategories = document.querySelectorAll("optgroup");
 const mainSelectDropdown = document.querySelector("#main-select");
 const subSelectDropdown = document.querySelector("#sub-select");
-console.log(subSelectDropdown);
 
 function showCategories(category) {
     let categoryID = category.id;
