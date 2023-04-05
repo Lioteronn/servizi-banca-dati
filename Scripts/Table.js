@@ -1,6 +1,6 @@
 const inputs = document.querySelectorAll("input");
-const tableContainer = document.querySelector(".table-container");
-const table = document.querySelector(".data-table");
+const tableContainer = document.querySelector("#table-container");
+const table = document.querySelector("#data-table");
 
 const submitButton = document.querySelector(".submit-button");
 

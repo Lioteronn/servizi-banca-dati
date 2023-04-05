@@ -61,7 +61,6 @@ label:nth-child(1) {
 button {
     display: block;
     margin: 20px auto 0 auto;
-
 }
 
 .form-container {
@@ -122,33 +121,56 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* TABLE STYLING */
 
-.table-container {
+#table-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 50px auto 0 auto;
     justify-content: center;
     width: 90vw;
 }
 
-.data-table {
+#data-table {
     width: 1600px;
+    max-width: 90vw;
+    margin-top: 45px;
     border-collapse: collapse;
     box-shadow: 0px 0px 10px 0px rgba(160, 160, 160, 0.6);
 }
 
-.data-table tr, .data-table td, .data-table th, .data-table {
+#data-table tr, #data-table td, #data-table th, #data-table {
     border: 2px solid rgb(169, 169, 169);
     background: white;
 }
 
-.data-table td:nth-child(3), .data-table td:nth-child(4) {
+#data-table td:nth-child(3), #data-table td:nth-child(4) {
     width: 130px;
 }
 
-.data-table td {
+#data-table td {
     padding: 5px;
     text-align: center;
 }
 
 .button-table-cell {
         padding: 0 6px 0 6px !important;
+}
+
+/* PDF CONVERT BUTTON STYLING */
+
+#pdf-button {
+    all: unset;
+    background: rgb(253, 111, 92);
+    font-family: "Work sans", sans-serif;
+    height: 35px;
+    width: 300px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+}
+
+#pdf-button:hover {
+    cursor: pointer;
+    background: rgb(197, 83, 68);
 }
