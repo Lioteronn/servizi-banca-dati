@@ -12,7 +12,8 @@ function showCategories(category) {
         if (ele.id == categoryID && ele.hasAttribute("hidden")) {
             console.log(ele);
             ele.removeAttribute("hidden");
-        } else if (ele.id == categoryID && !ele.hasAttribute("hidden")) {
+        } 
+        else if (ele.id == categoryID && !ele.hasAttribute("hidden")) {
             ele.setAttribute("hidden", "hidden");
         }
     });

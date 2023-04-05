@@ -1,8 +1,6 @@
 const inputs = document.querySelectorAll("input");
 const tableContainer = document.querySelector(".table-container");
-const table = document.createElement("table");
-table.classList.add("data-table");
-tableContainer.appendChild(table);
+const table = document.querySelector(".data-table");
 
 const submitButton = document.querySelector(".submit-button");
 
@@ -35,8 +33,20 @@ function getFormData() {
     return formData;
 }
 
+function deleteRow(button) {
+
+}
+
 function createRow() {
     let data = getFormData();
+
+    let deleteButton = document.createElement("button");
+    deleteButton.classList.add("delete-button");
+    
+    let buttonImage = document.createElement("img");
+    buttonImage.src = "./Images/delete.svg";
+    deleteButton.appendChild(buttonImage);
+
     console.log(data);
 
     let row = document.createElement("tr");
@@ -45,9 +55,21 @@ function createRow() {
         let cell = document.createElement("td");
         cell.innerHTML = data[i];
         row.appendChild(cell);
+
+        if (i == 6) {
+            let buttonCell = document.createElement("td");
+            buttonCell.classList.add("button-table-cell");
+            buttonCell.appendChild(deleteButton);
+            row.appendChild(buttonCell);
+        }
     }
 
     table.appendChild(row);
+
+    deleteButton.addEventListener("click", function () {
+        let buttonParent = deleteButton.parentElement.parentElement;
+        buttonParent.remove();
+    })
 }
 
 submitButton.addEventListener("click", createRow);
