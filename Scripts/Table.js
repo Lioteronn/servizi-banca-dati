@@ -33,10 +33,6 @@ function getFormData() {
     return formData;
 }
 
-function deleteRow(button) {
-
-}
-
 function createRow() {
     let data = getFormData();
 
