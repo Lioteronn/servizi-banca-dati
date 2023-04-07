@@ -156,7 +156,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         padding: 0 6px 0 6px !important;
 }
 
-/* PDF CONVERT BUTTON STYLING */
+/* PDF AND CSV CONVERT BUTTON STYLING */
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    column-gap: 25px;
+}
 
 #pdf-button {
     all: unset;
@@ -174,3 +180,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     cursor: pointer;
     background: rgb(197, 83, 68);
 }
+
+#csv-button {
+    all: unset;
+    background: rgb(62, 203, 71);
+    font-family: "Work sans", sans-serif;
+    height: 35px;
+    width: 300px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 3px;
+}
+
+#csv-button:hover {
+    cursor: pointer;
+    background: rgb(43, 147, 50);
+}
+
+
